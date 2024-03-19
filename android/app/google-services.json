@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "672484390286",
+    "project_id": "tezda-e1c9e",
+    "storage_bucket": "tezda-e1c9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672484390286:android:b900a286f087dd659260df",
+        "android_client_info": {
+          "package_name": "com.example.task_homescreen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2dTIZ3q2PJorzcx5WUtb4_2wrtJnHqcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
