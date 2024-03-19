@@ -212,7 +212,7 @@ class RegView extends StatelessWidget {
     );
   }
 
-  //Sign Up Function
+ // Sign Up Function
   void signUp(String email, String password) async {
     if (formKey.currentState!.validate()) {
       await auth
@@ -244,4 +244,10 @@ class RegView extends StatelessWidget {
     // Use Get.to instead of Navigator.pushReplacement
     Get.off(() => ListPage());
   }
+
+
+
+
+
 }
+
