@@ -27,8 +27,11 @@ class ProfileController extends GetxController {
       );
 
       if (pickedFile != null) {
+        print('Picked file path: ${pickedFile.path}');
         String imageUrl = await uploadImage(File(pickedFile.path), user!.uid);
+        print('Uploaded image URL: $imageUrl');
         await updateProfileImage(user!.uid, imageUrl);
+        print('Profile image updated successfully');
       }
     } catch (e) {
       print('Error picking and uploading image: $e');

@@ -43,12 +43,21 @@ class ProfileScreen extends StatelessWidget {
                     children: [
                       Stack(
                         children: [
-                          ClipOval(
-                            child: Image.asset(
-                              ImagePath.profile,
-                              fit: BoxFit.cover,
-                              height: 150,
-                              width: 150,
+                          Obx(
+                            () => ClipOval(
+                              child: controller.imageUrl.isNotEmpty
+                                  ? Image.network(
+                                      controller.imageUrl.value,
+                                      fit: BoxFit.cover,
+                                      height: 150,
+                                      width: 150,
+                                    )
+                                  : Image.asset(
+                                      ImagePath.profile,
+                                      fit: BoxFit.cover,
+                                      height: 150,
+                                      width: 150,
+                                    ),
                             ),
                           ),
                           Positioned(
